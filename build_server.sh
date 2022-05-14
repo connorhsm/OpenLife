@@ -30,5 +30,5 @@ haxelib install format
 haxe server.hxml
 
 echo ""
-echo "Build complete. Run `hl server.hl` to run server."
+echo "Build complete. Run 'hl server.hl' to run server."
 echo ""
