@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-cd OpenLife-master
+cd OpenLife
 hl server.hl
