@@ -30,5 +30,4 @@ RUN haxe server.hxml
 
 EXPOSE 8005
 
-COPY ./docker-entrypoint.sh /
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["hl", "server.hl"]
