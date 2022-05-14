@@ -50,6 +50,9 @@ hl server.hl
 ```
 
 No errors, looks like its working!
+
 Can now chuck it in a process manager like Screen or Tmux
+
 Ctrl + C to stop the server
+
 Find server settings in OpenLife/SaveFiles/ServerSettings.txt, the server checks for changes at startup and every 10 seconds
