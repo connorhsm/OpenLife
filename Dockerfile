@@ -24,9 +24,9 @@ RUN curl -0 -L https://github.com/HaxeFoundation/hashlink/archive/1.12.tar.gz --
 
 # Build OpenLife
 COPY . .
-RUN echo 0 | haxe setup_data.hxml \
-&& haxelib install format \
-&& haxe server.hxml
+RUN haxelib install format
+RUN echo 0 | haxe setup_data.hxml
+RUN haxe server.hxml
 
 EXPOSE 8005
 
