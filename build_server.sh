@@ -12,14 +12,18 @@ sudo apt install git gcc make -y
 
 # Install Hashlink
 sudo apt install libpng-dev libturbojpeg-dev libvorbis-dev libopenal-dev libsdl2-dev libmbedtls-dev libuv1-dev libsqlite3-dev -y
-git clone https://github.com/HaxeFoundation/hashlink
+if [ ! -d "hashlink" ] ; then
+    git clone "https://github.com/HaxeFoundation/hashlink"
+fi
 cd hashlink
 make
 make install
 cd ..
 
 # Build OpenLife Server
-git clone https://github.com/PXshadow/OpenLife
+if [ ! -d "OpenLife" ] ; then
+    git clone "https://github.com/PXshadow/OpenLife"
+fi
 cd OpenLife
 haxe setup_data.hxml
 haxelib install format
