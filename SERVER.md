@@ -4,6 +4,7 @@ Originally learnt from a lengthy explanation in TODO.md
 
 Using a default DigitalOcean droplet (No custom image) with 2GB/2 Intel vCPU on Ubuntu 20.04
 
+Find this as a script in `build_server.sh`
 
 Install Haxe as according to https://haxe.org/download/linux/
 ```bash
