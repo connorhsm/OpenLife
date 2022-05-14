@@ -23,10 +23,8 @@ RUN curl -0 -L https://github.com/HaxeFoundation/hashlink/archive/1.12.tar.gz --
 && cd ..
 
 # Build OpenLife
-RUN curl -0 -L https://github.com/PXshadow/OpenLife/archive/master.tar.gz --output OpenLife.tar.gz \
-&& tar -xzvf OpenLife.tar.gz \
-&& cd OpenLife-master \
-&& echo 0 | haxe setup_data.hxml \
+COPY . .
+RUN echo 0 | haxe setup_data.hxml \
 && haxelib install format \
 && haxe server.hxml
 
