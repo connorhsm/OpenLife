@@ -11,7 +11,7 @@ mkdir ~/haxelib && haxelib setup ~/haxelib
 sudo apt install git gcc make -y
 
 # Install Hashlink
-sudo apt install libpng-dev libturbojpeg-dev libvorbis-dev libopenal-dev libsdl2-dev libmbedtls-dev libuv1-dev libsqlite3-dev
+sudo apt install libpng-dev libturbojpeg-dev libvorbis-dev libopenal-dev libsdl2-dev libmbedtls-dev libuv1-dev libsqlite3-dev -y
 git clone https://github.com/HaxeFoundation/hashlink
 cd hashlink
 make
