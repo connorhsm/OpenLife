@@ -35,12 +35,7 @@ Build OpenLife Server
 ```bash
 git clone https://github.com/PXshadow/OpenLife
 cd OpenLife
-# Need to input 0 for OHOL Data or 1 for 2HOL data. Can this be passed as an argument?
-haxe setup_data_server.hxml
-# haxe server.hxml
-# First time, recived this error
-# Error: Error: Cannot process [format]: Library format is not installed : run 'haxelib install format'
-# Am I meant to install project dependencies or something like JS with NPM? IDK how Haxe works. Whatever, this made it work fine.
+echo 0 | haxe setup_data_server.hxml
 haxelib install format
 haxe server.hxml
 ```
