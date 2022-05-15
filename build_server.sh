@@ -25,7 +25,7 @@ if [ ! -d "OpenLife" ] ; then
     git clone "https://github.com/PXshadow/OpenLife"
 fi
 cd OpenLife
-echo 0 | haxe setup_data.hxml
+echo 0 | haxe setup_data_server.hxml
 haxelib install format
 haxe server.hxml
 
